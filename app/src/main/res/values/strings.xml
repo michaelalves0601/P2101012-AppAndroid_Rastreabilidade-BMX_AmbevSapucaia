@@ -1,3 +1,18 @@
 <resources>
-    <string name="app_name">RecipesAMBEVSapucaia</string>
+    <string name="app_name">Resabev</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Biatriz Basillio</string>
+    <string name="nav_header_subtitle">Supervisora</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_subtitleid">ID: 007070</string>
+    <string name="nav_header_logout">Logout</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_recipes">Receitas</string>
+    <string name="menu_history">Histórico</string>
+    <string name="menu_user">Usuário</string>
+    <string name="menu_storage">Armazenamento</string>
+    <string name="menu_settings">Configurações</string>
 </resources>
