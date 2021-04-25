@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.sbuild.App_Kit" >
+    package="Resabev.Software" >
 
     <application
         android:allowBackup="true"
@@ -10,12 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Resabev" >
         <activity
-            android:name=".MainActivityTESTE"
-            android:label="@string/title_activity_main_t_e_s_t_e"
-            android:theme="@style/Theme.Resabev.NoActionBar" >
-        </activity>
-        <activity
-            android:name=".Presentation.ui.activity_home"
+            android:name=".activity_home"
             android:theme="@style/Theme.Resabev.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
