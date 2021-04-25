@@ -7,37 +7,19 @@
 
     <fragment
         android:id="@+id/nav_home"
-        android:name="Resabev.Software.ui.Home.HomeFragment"
+        android:name="com.sbuild.App_Kit.ui.home.HomeFragment"
         android:label="@string/menu_home"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_recipes"
-        android:name="Resabev.Software.ui.Recipes.RecipesFragment"
-        android:label="@string/menu_recipes"
-        tools:layout="@layout/fragment_recipes" />
+        android:id="@+id/nav_gallery"
+        android:name="com.sbuild.App_Kit.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_history"
-        android:name="Resabev.Software.ui.History.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_history" />
-
-    <fragment
-        android:id="@+id/nav_user"
-        android:name="Resabev.Software.ui.History.HistoryFragment"
-        android:label="@string/menu_user"
-        tools:layout="@layout/fragment_history" />
-
-    <fragment
-        android:id="@+id/nav_storage"
-        android:name="Resabev.Software.ui.History.HistoryFragment"
-        android:label="@string/menu_storage"
-        tools:layout="@layout/fragment_history" />
-
-    <fragment
-        android:id="@+id/nav_setting"
-        android:name="Resabev.Software.ui.History.HistoryFragment"
-        android:label="@string/menu_settings"
-        tools:layout="@layout/fragment_history" />
+        android:id="@+id/nav_slideshow"
+        android:name="com.sbuild.App_Kit.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
 </navigation>
