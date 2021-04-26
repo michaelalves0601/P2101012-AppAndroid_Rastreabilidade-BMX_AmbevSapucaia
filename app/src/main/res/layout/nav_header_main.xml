@@ -5,69 +5,132 @@
     android:id="@+id/linearLayout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/nav_header_height"
-    android:background="@color/fundoMenu"
+    android:background="@color/transparente"
     android:gravity="bottom"
     android:theme="@style/ThemeOverlay.AppCompat.DayNight">
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/nav_header_desc"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
-            app:srcCompat="@mipmap/ic_launcher_round"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/textView2"
-            android:layout_width="211dp"
-            android:layout_height="27dp"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
-            android:text="@string/nav_header_title"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteX="389dp"
-            tools:layout_editor_absoluteY="26dp" />
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:cardBackgroundColor="@color/fundoCardProfile"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0">
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nav_header_subtitle"
-            android:textColor="#007070"
-            tools:layout_editor_absoluteY="57dp" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparente">
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="62dp"
-            android:layout_height="20dp"
-            android:text="@string/nav_header_subtitleid"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteY="104dp" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="91dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/nav_header_desc"
+                    android:cropToPadding="false"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/_180662_256"
+                    tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/textlogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/nav_header_logout"
-            android:textColor="@color/white"
-            tools:layout_editor_absoluteY="109dp" />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:text="@string/nav_header_title"
+                    android:textAlignment="viewEnd"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/imageView"
+                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintVertical_bias="0.19" />
 
-        <ImageView
-            android:id="@+id/imageViewlogout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:contentDescription="@string/nav_header_desc"
-            android:paddingTop="@dimen/nav_header_vertical_spacing"
-            app:srcCompat="@drawable/ic_logout"
-            tools:ignore="MissingConstraints" />
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="7dp"
+                    android:text="@string/nav_header_subtitle"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/textView2"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintVertical_bias="0.01999998" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="72dp"
+                    android:layout_height="21dp"
+                    android:layout_marginTop="4dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/nav_header_subtitleid"
+                    android:textAlignment="center"
+                    android:textColor="@color/textSecondary"
+                    android:textSize="12sp"
+                    app:layout_constraintEnd_toEndOf="@+id/imageView"
+                    app:layout_constraintStart_toStartOf="@+id/imageView"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+                <TextView
+                    android:id="@+id/textlogout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:fontFamily="@font/roboto"
+                    android:text="@string/nav_header_logout"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/imageViewlogout"
+                    app:layout_constraintEnd_toStartOf="@+id/imageViewlogout"
+                    app:layout_constraintTop_toTopOf="@+id/imageViewlogout"
+                    app:layout_constraintVertical_bias="0.65999997" />
+
+                <ImageView
+                    android:id="@+id/imageViewlogout"
+                    android:layout_width="26dp"
+                    android:layout_height="37dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="@string/nav_header_desc"
+                    android:paddingTop="@dimen/nav_header_vertical_spacing"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/ic_logout"
+                    tools:ignore="MissingConstraints" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
