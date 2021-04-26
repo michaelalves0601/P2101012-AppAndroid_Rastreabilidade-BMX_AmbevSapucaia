@@ -26,6 +26,8 @@ class activity_home : AppCompatActivity() {
         val drawerLayout: DrawerLayout  = findViewById(R.id.drawer_layout)
         val navView: NavigationView = findViewById(R.id.nav_view)
 
+        navView.getMenu().getItem(2).setActionView(R.layout.menu_image);
+
         val navFragment = supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navFragment.navController
 
