@@ -21,4 +21,9 @@
     <string name="title_activity_home">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="dark_mode">Modo Escuro</string>
+    <string name="version">0.1</string>
+    <string name="sync">Sincronização</string>
+    <string name="onlineoffile">Online</string>
+    <string name="backup">25 seg atrás</string>
 </resources>

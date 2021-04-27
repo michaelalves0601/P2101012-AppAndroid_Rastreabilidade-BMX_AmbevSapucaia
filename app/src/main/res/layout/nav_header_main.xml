@@ -40,7 +40,7 @@
                 android:background="@color/transparente">
 
                 <ImageView
-                    android:id="@+id/imageView"
+                    android:id="@+id/imagesync"
                     android:layout_width="100dp"
                     android:layout_height="91dp"
                     android:layout_marginStart="5dp"
@@ -56,7 +56,7 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/textsync"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/roboto"
@@ -66,24 +66,24 @@
                     android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                     android:textColor="@color/white"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagesync"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imageView"
-                    app:layout_constraintTop_toTopOf="@+id/imageView"
+                    app:layout_constraintStart_toEndOf="@+id/imagesync"
+                    app:layout_constraintTop_toTopOf="@+id/imagesync"
                     app:layout_constraintVertical_bias="0.19" />
 
                 <TextView
-                    android:id="@+id/textView"
+                    android:id="@+id/textonlinesync"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="7dp"
                     android:text="@string/nav_header_subtitle"
                     android:textColor="@color/textSecondary"
                     android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageView"
-                    app:layout_constraintStart_toStartOf="@+id/textView2"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2"
+                    app:layout_constraintBottom_toBottomOf="@+id/imagesync"
+                    app:layout_constraintStart_toStartOf="@+id/textsync"
+                    app:layout_constraintTop_toBottomOf="@+id/textsync"
                     app:layout_constraintVertical_bias="0.01999998" />
 
                 <TextView
@@ -96,9 +96,9 @@
                     android:textAlignment="center"
                     android:textColor="@color/textSecondary"
                     android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@+id/imageView"
-                    app:layout_constraintStart_toStartOf="@+id/imageView"
-                    app:layout_constraintTop_toBottomOf="@+id/imageView" />
+                    app:layout_constraintEnd_toEndOf="@+id/imagesync"
+                    app:layout_constraintStart_toStartOf="@+id/imagesync"
+                    app:layout_constraintTop_toBottomOf="@+id/imagesync" />
 
                 <TextView
                     android:id="@+id/textlogout"

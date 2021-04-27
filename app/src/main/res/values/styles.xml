@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="Widget.Theme.Resabev.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/black_overlay</item>
@@ -7,5 +7,10 @@
     <style name="Widget.Theme.Resabev.ButtonBar.Fullscreen" parent="">
         <item name="android:background">@color/black_overlay</item>
         <item name="android:buttonBarStyle">?android:attr/buttonBarStyle</item>
+    </style>
+
+    <style name="myNavigationDrawerStyle" >
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#808080</item>
     </style>
 </resources>

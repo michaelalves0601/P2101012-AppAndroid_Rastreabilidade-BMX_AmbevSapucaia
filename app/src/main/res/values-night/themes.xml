@@ -2,10 +2,12 @@
     <!-- Base application theme. -->
     <style name="Theme.Resabev" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/green</item>
-        <item name="colorPrimaryVariant">@color/greenDark</item>
-        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimary">#808080</item>
+        <item name="colorPrimaryVariant">#808080</item>
+        <item name="colorOnPrimary">#808080</item>
         <!-- Secondary brand color. -->
+        <item name="colorPrimaryDark">#808080</item>
+        <item name="colorOnPrimarySurface"> #808080</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
