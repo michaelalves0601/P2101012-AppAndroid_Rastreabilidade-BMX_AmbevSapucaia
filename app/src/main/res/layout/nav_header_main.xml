@@ -1,136 +1,142 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/linearLayout"
-    android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
-    android:background="@color/transparente"
-    android:gravity="bottom"
-    android:theme="@style/ThemeOverlay.AppCompat.DayNight">
-
-
-    <androidx.constraintlayout.widget.ConstraintLayout
+<layout>
+    <data>
+        <variable
+            name = "perfil" type="Resabev.Software.Domain.Model.User.UsuarioPerfil"/>
+    </data>
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="@dimen/nav_header_height"
+        android:background="@color/transparente"
+        android:gravity="bottom"
+        android:theme="@style/ThemeOverlay.AppCompat.DayNight">
 
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
 
-        <androidx.cardview.widget.CardView
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            app:cardBackgroundColor="@color/fundoCardProfile"
-            app:cardCornerRadius="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="20dp"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0">
+            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@color/transparente">
+                android:layout_height="0dp"
+                app:cardBackgroundColor="@color/fundoCardProfile"
+                app:cardCornerRadius="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
 
-                <ImageView
-                    android:id="@+id/imagesync"
-                    android:layout_width="100dp"
-                    android:layout_height="91dp"
-                    android:layout_marginStart="5dp"
-                    android:layout_marginTop="5dp"
-                    android:adjustViewBounds="true"
-                    android:contentDescription="@string/nav_header_desc"
-                    android:cropToPadding="false"
-                    android:paddingTop="@dimen/nav_header_vertical_spacing"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/_180662_256"
-                    tools:ignore="MissingConstraints" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparente">
 
-                <TextView
-                    android:id="@+id/textsync"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/roboto"
-                    android:paddingTop="@dimen/nav_header_vertical_spacing"
-                    android:text="@string/nav_header_title"
-                    android:textAlignment="viewEnd"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-                    android:textColor="@color/white"
-                    android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imagesync"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.0"
-                    app:layout_constraintStart_toEndOf="@+id/imagesync"
-                    app:layout_constraintTop_toTopOf="@+id/imagesync"
-                    app:layout_constraintVertical_bias="0.19" />
+                    <ImageView
+                        android:id="@+id/imageprofile"
+                        android:layout_width="100dp"
+                        android:layout_height="91dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:adjustViewBounds="true"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:cropToPadding="false"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/_180662_256"
+                        tools:ignore="MissingConstraints" />
 
-                <TextView
-                    android:id="@+id/textonlinesync"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="7dp"
-                    android:text="@string/nav_header_subtitle"
-                    android:textColor="@color/textSecondary"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imagesync"
-                    app:layout_constraintStart_toStartOf="@+id/textsync"
-                    app:layout_constraintTop_toBottomOf="@+id/textsync"
-                    app:layout_constraintVertical_bias="0.01999998" />
+                    <TextView
+                        android:id="@+id/nameuser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:text="@{profile.nome}"
+                        android:textAlignment="viewEnd"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageprofile"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageprofile"
+                        app:layout_constraintTop_toTopOf="@+id/imageprofile"
+                        app:layout_constraintVertical_bias="0.19" />
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="72dp"
-                    android:layout_height="21dp"
-                    android:layout_marginTop="4dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/nav_header_subtitleid"
-                    android:textAlignment="center"
-                    android:textColor="@color/textSecondary"
-                    android:textSize="12sp"
-                    app:layout_constraintEnd_toEndOf="@+id/imagesync"
-                    app:layout_constraintStart_toStartOf="@+id/imagesync"
-                    app:layout_constraintTop_toBottomOf="@+id/imagesync" />
+                    <TextView
+                        android:id="@+id/funcaoprofile"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="7dp"
+                        android:text="@string/nav_header_subtitle"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageprofile"
+                        app:layout_constraintStart_toStartOf="@+id/nameuser"
+                        app:layout_constraintTop_toBottomOf="@+id/nameuser"
+                        app:layout_constraintVertical_bias="0.01999998" />
 
-                <TextView
-                    android:id="@+id/textlogout"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="5dp"
-                    android:fontFamily="@font/roboto"
-                    android:text="@string/nav_header_logout"
-                    android:textColor="@color/white"
-                    android:textSize="16sp"
-                    app:layout_constraintBottom_toBottomOf="@+id/imageViewlogout"
-                    app:layout_constraintEnd_toStartOf="@+id/imageViewlogout"
-                    app:layout_constraintTop_toTopOf="@+id/imageViewlogout"
-                    app:layout_constraintVertical_bias="0.65999997" />
+                    <TextView
+                        android:id="@+id/idprofile"
+                        android:layout_width="72dp"
+                        android:layout_height="21dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/nav_header_subtitleid"
+                        android:textAlignment="center"
+                        android:textColor="@color/textSecondary"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toEndOf="@+id/imageprofile"
+                        app:layout_constraintStart_toStartOf="@+id/imageprofile"
+                        app:layout_constraintTop_toBottomOf="@+id/imageprofile" />
 
-                <ImageView
-                    android:id="@+id/imageViewlogout"
-                    android:layout_width="26dp"
-                    android:layout_height="37dp"
-                    android:layout_marginEnd="16dp"
-                    android:layout_marginBottom="12dp"
-                    android:contentDescription="@string/nav_header_desc"
-                    android:paddingTop="@dimen/nav_header_vertical_spacing"
-                    android:scaleType="centerCrop"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:srcCompat="@drawable/ic_logout"
-                    tools:ignore="MissingConstraints" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    <TextView
+                        android:id="@+id/textlogout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="5dp"
+                        android:fontFamily="@font/roboto"
+                        android:text="@string/nav_header_logout"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toBottomOf="@+id/imageViewlogout"
+                        app:layout_constraintEnd_toStartOf="@+id/imageViewlogout"
+                        app:layout_constraintTop_toTopOf="@+id/imageViewlogout"
+                        app:layout_constraintVertical_bias="0.65999997" />
 
-        </androidx.cardview.widget.CardView>
+                    <ImageView
+                        android:id="@+id/imageViewlogout"
+                        android:layout_width="26dp"
+                        android:layout_height="37dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="12dp"
+                        android:contentDescription="@string/nav_header_desc"
+                        android:paddingTop="@dimen/nav_header_vertical_spacing"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:srcCompat="@drawable/ic_logout"
+                        tools:ignore="MissingConstraints" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
