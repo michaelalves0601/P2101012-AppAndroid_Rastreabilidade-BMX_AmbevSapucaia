@@ -102,7 +102,7 @@
                                 android:id="@+id/nameuser"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:layout_marginStart="28dp"
+                                android:layout_marginStart="30dp"
                                 android:fontFamily="More Fonts..."
                                 android:paddingTop="@dimen/nav_header_vertical_spacing"
                                 android:text="@string/sync"
